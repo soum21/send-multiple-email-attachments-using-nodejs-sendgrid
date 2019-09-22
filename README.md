@@ -20,7 +20,9 @@
       ```
     * Modify file email.js file Line Number 19 , change email Id you want to send the email to .
     * var ticketDetails can be seen as query from databases. 
-     ```var ticketDetails = {
+     
+     ```javascript
+     var ticketDetails = {
         firstName: 'Towfiq',
         email: 'soum.ragan@gmail.com',
     };
