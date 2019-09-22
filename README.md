@@ -40,4 +40,4 @@
     * In your browser type: http://localhost:5100/email
     * Get response Email sent check 
     * Visit your email id 
-    ![]
+    ![](views/images/Screenshot%202019-09-22%20at%208.35.33%20PM.png)
