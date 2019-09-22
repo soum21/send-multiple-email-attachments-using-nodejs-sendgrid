@@ -1,1 +1,3 @@
-# This Repository Contains a solution for sending multiple email attachments(pdf) using nodejs and sendgrid
+## How to send Multiple PDF Attachments using Sendgrid and Nodejs
+###### Towfiqur Rahman edited this page on Septem 21 2019
+## Getting Started
