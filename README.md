@@ -39,3 +39,5 @@
     * run nodemon server.js 
     * In your browser type: http://localhost:5100/email
     * Get response Email sent check 
+    * Visit your email id 
+    ![]
