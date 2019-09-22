@@ -45,7 +45,7 @@
     
     
 ## Explanation of Code :
-###### Most of us know how to create server file on nodejs as a result i will only be explaining how i send multiple attachments with one email.
+### Most of us know how to create server file on nodejs as a result i will only be explaining how i send multiple attachments with one email.
 ## Lets begin
  1) Under app folder-> email folder -> we have email.js file 
  2) We have also created two handle bar files under views folder. email.hjs is the html that will be attached with the email.
