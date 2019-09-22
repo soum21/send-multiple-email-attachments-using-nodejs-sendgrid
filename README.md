@@ -49,7 +49,8 @@
 ## Lets begin
  1) Under app folder-> email folder -> we have email.js file 
  2) We have also created two handle bar files under views folder. email.hjs is the html that will be attached with the email.
-  indiv_tickets.hjs will be send as pdf. Because this file in our case is for each ticket. After that we are converting them      in   to handlebars file.
+  indiv_tickets.hjs will be send as pdf. Because this file in our case is for each ticket.
+  We are reading both files and after that we are converting them      in   to handlebars file.
        
        ```javascript
           var template = fs.readFileSync('./views/email.hjs', 'utf-8');
