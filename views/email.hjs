@@ -1,0 +1,226 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SuperGt Email Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style type="text/css">
+@font-face{
+    font-family:"formula1-display-regular";
+    src:url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11543/Formula1-Regular_web_0.ttf") format("truetype");
+}
+.htm_tag{font-family:"formula1-display-regular";font-size:45px;text-transform:none;color:#F32951}
+</style>
+</head>
+
+</html>
+
+<body style="margin: 0; padding: 0;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+            <td align="center" bgcolor="black" style="padding: 0px 0 0px 0; 
+            position: relative;
+                color: #FFF;">
+                <img src="https://supergt.s3-ap-southeast-1.amazonaws.com/LandingPageImage.jpg"
+                    alt="Creating Email Magic" width="100%" style="display: block;" />
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr style="font-weight: normal;
+                                font-size: 14px;
+                                position: relative;
+                                ">
+                        <td style="padding: 0px 35px 0px 35px;">
+                            Dear <span> {{firstName}}.</span>
+                        </td>
+                    </tr>
+                    <tr style="text-align: center">
+                        <td
+                            style="padding: 0px 20 0px 20; 
+                            color: #CF001C;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 27px;">
+                            You have Recieved your tickets
+                        </td>
+                    </tr>
+                    <tr style="text-align: center;font-size: 11px;">
+                        <td style=" padding-bottom:5px;">
+                            Thank you for your purchase! Please download, save, print your ticket before the event.
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td bgcolor="black" style="padding: 10px 30px 40px 30px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td height="25" style="border-top-left-radius: 10px; border-top-right-radius:10px; color:white;"
+                            bgcolor="#191B21">
+                            <span style="padding: 0px 170px 0px 170px; margin: 0px 5px 0px 5px; text-transform:uppercase;">Tickets and Reciept</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="white" style="border-bottom-left-radius: 7px; border-bottom-right-radius:7px; ">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="black">
+                                <tr>
+                                    <td width="260" valign="top"
+                                    cellpadding="0"
+                                        style="border-bottom-left-radius: 7px; border-bottom:dashed 2px; border-bottom-style:dashed; font-size:10px; padding:5px 5px 5px 5px;border-right: 1px solid black;"
+                                        bgcolor="white">
+                                        <div>
+                                            <span>Order Date:</span>
+                                            <span>{{order_date}}</span>
+                                        </div>
+                                        <div>
+                                            <span>Order Time:</span>
+                                            <span>{{order_time}}</span>
+                                        </div>
+                                        <div>
+                                            <span>Transaction ID:</span>
+                                            <span>{{trnsc_id}}</span>
+                                        </div>
+                                        <div class="paidAmount"
+                                            style="margin-top: 2px;font-weight: 600; font-size: 12px; padding:10px 0px 0px 0px;">
+                                            <span>Paid Amount</span>
+                                        </div>
+                                        <div class="rmt" style="font-weight: 600;font-size: 20px;">
+                                            <span>RM {{total_amount}}</span>
+                                        </div>
+                                    </td>
+                                   <td  cellpadding="0"
+                                   width="260" 
+                                   valign="top"
+                                    style="background-color: #FFF;
+                                    color: #0D0F14;
+                                    border-bottom-right-radius: 7px;
+                                    border-bottom: dashed 2px;
+                                    border-bottom-style: dashed;
+                                    border-right: 1px solid #000;
+                                    padding:5px 5px 5px 5px;">
+                                        <div style="float: left;  font-size:10px; ">
+                                            <div class="name">
+                                                <span> Name:</span>
+                                                <span>{{firstName}}</span>
+                                            </div>
+                                            <div class="name">
+                                                <span>Email:</span>
+                                                <span>{{email}}</span>
+                                            </div>
+                                            <div class="name">
+                                                <span>Phone:</span>
+                                                <span>{{phone}}</span>
+                                            </div>
+                                        </div>
+
+                                        <div style="float: right;
+                                                    text-align: right;
+                                                    padding: 0px 0px 0px 0px;
+                                                    ">
+                                            <div style="font-size: 40px; font-weight:800; padding:0px 15px 0px 0px; margin: 0px 0px 0px 0px;">
+                                                <span>{{quantity}}</span>
+                                            </div>
+                                                <p style="font-size:10px;font-weight:600; padding:2px 12px 0px 0px; margin: -10px 0px 0px 0px;">Tickets</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {{#package_details}}
+                                <tr>
+                                    <td 
+                                        style="background-color: #FFF;
+                                        color: #0D0F14;
+                                        border-top-left-radius: 10px;
+                                        border-bottom-left-radius: 7px;
+                                        border-bottom: dashed 2px;
+                                        border-bottom-style: dashed;
+                                        border-left: none;
+                                        border-right: 1px solid #000;
+                                        border-spacing: 0;
+                                        border-collapse: collapse;
+                                        padding:10px 5px 5px 5px;">
+                                      
+                                        <div style="font-size: 20px; font-weight:600; padding: 5px 0px 0px 0px;">
+                                            <span>
+                                                {{area_name}}
+                                            </span>
+                                        </div>
+                                        <div style="font-size: 17.5px;font-weight:600; padding: 0px 0px 0px 0px;">
+                                            <span>
+                                                + {{package_name}} {{package_type}}
+                                            </span>
+                                        </div>
+                                        <div style="font-size: 12px ; padding: 20px 0px 0px 0px;">
+                                            <span class="eventDate">
+                                                3rd & 4th July
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="background-color: #FFF;
+                                    color: #0D0F14;
+                                    border-top-right-radius: 10px;
+                                    border-bottom-right-radius: 7px;
+                                    border-bottom: dashed 2px;
+                                    border-bottom-style: dashed;
+                                    border-left: none;
+                                    border-right: 0px solid #000;
+                                    border-spacing: 0;
+                                    border-collapse: collapse;
+                                    padding:0px 5px 0px 5px;">
+                                        <div style="float: left;  font-size:10px;">
+                                            <div style="padding: 0px 0px 5px 0px;">
+                                                <span> Name:</span>
+                                                <span>{{firstName}}</span>
+                                            </div>
+                                            <div style="padding: 0px 0px 5px 0px;">
+                                                <span>Email:</span>
+                                                <span>{{email}}</span>
+                                            </div>
+                                            <div style="padding: 0px 0px 5px 0px;">
+                                                <span>Phone:</span>
+                                                <span>{{phone}}</span>
+                                            </div>
+                                            <div style="padding: 0px 0px 5px 0px;">
+                                                <span>Quantity:</span>
+                                                <span>{{quantity}}</span>
+                                            </div>
+                                            <div style="padding: 0px 0px 5px 0px;">
+                                                <span>Price:</span>
+                                                <span>{{price}}</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="rightHalf" style="
+                                                    float: right;
+                                                    text-align: end;
+                                                    margin: -5.5px 0px 0px 0px;">
+                                            <div class="qrCode">
+                                                <img style="width: 90px"
+                                                    src="http://demo.stubapp.com:3400?data={{package_serial_number}}" />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {{/package_details}}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="">
+                       
+                    </tr>
+                    <tr>
+                        <td bgcolor="black" style="color:white; font-size:11px; text-align:center">
+                            For more details: Whatsapp: +6013-49767892 | Email: your_support@gmail.com
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+</body>
