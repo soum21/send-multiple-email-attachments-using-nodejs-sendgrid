@@ -41,3 +41,4 @@
     * Get response Email sent check 
     * Visit your email id 
     ![](views/images/Screenshot%202019-09-22%20at%208.35.33%20PM.png)
+    ![](views/images/Screenshot%202019-09-22%20at%208.40.42%20PM.png)
